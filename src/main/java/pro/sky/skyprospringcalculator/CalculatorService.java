@@ -5,25 +5,19 @@ import org.springframework.stereotype.Service;
 @Service
 public class CalculatorService {
 
-    public static String sum(int num1, int num2) {
-        int getSum = num1 + num2;
-        return num1 + " + " + num2 + " = " + getSum;
+    public static int sum(int num1, int num2) {
+        return num1 + num2;
     }
 
-    public static String difference(int num1, int num2) {
-        int getDifference = num1 - num2;
-        return num1 + " - " + num2 + " = " + getDifference;
+    public static int difference(int num1, int num2) {
+        return num1 - num2;
     }
 
-    public static String multiply(int num1, int num2) {
-        int getMultiply = num1 * num2;
-        return num1 + " * " + num2 + " = " + getMultiply;
+    public static int multiply(int num1, int num2) {
+        return num1 * num2;
     }
 
-    public static String divide(int num1, int num2) {
-        int getDivide = num1 / num2;
-        if (num2 == 0) {
-            return "деление на 0 запрещено";
-        } else {return num1 + " / " + num2 + " = " + getDivide;}
+    public static int divide(int num1, int num2) {
+        return num1 / num2;
     }
 }
